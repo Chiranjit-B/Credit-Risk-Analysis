@@ -1,6 +1,17 @@
 # 🚀 Credit Risk Analysis Project 📊💳
 
+![Project Badge](https://img.shields.io/badge/Project-Credit%20Risk%20Analysis-brightgreen)
+![EDA Badge](https://img.shields.io/badge/EDA-Exploratory%20Data%20Analysis-blue)
+![Classification Model Badge](https://img.shields.io/badge/Model-Random%20Forest%20Classifier-orange)
+![SMOTE Badge](https://img.shields.io/badge/SMOTE-Class%20Imbalance%20Handling-yellow)
+![Clustering Badge](https://img.shields.io/badge/Clustering-KMeans%20Clustering-lightblue)
+![Hyperparameter Tuning Badge](https://img.shields.io/badge/Hyperparameter%20Tuning-GridSearchCV-red)
+![Accuracy Badge](https://img.shields.io/badge/Accuracy-82.5%25-green)
+
 Welcome to the **Credit Risk Analysis** project! This repository contains a comprehensive analysis and classification of credit risks using various machine learning techniques. Dive in to explore how we transform raw data into actionable insights. 🎉
+
+![image](https://github.com/user-attachments/assets/efc49fa7-288d-45c7-8dfb-978538bc03ca)
+
 
 ## 📚 Table of Contents
 - [Introduction](#introduction)
@@ -39,12 +50,19 @@ Here's a high-level overview of the steps we took in this project:
 7. **Hyperparameter Tuning and Grid Search**: Using GridSearchCV for hyperparameter tuning to find the best model parameters 🔧
 8. **Model Evaluation**: Comparing models based on performance metrics 🏅
 
+## ⚖️ SMOTE Analysis
+SMOTE (Synthetic Minority Over-sampling Technique) is used to address class imbalance in the dataset. By generating synthetic samples for the minority class, SMOTE helps in improving the model's ability to correctly classify minority instances. In this project, SMOTE is applied to the training data to balance the 'Good' and 'Bad' risk categories.
+
+## 🔧 Hyperparameter Tuning and Grid Search
+Hyperparameter tuning is crucial for optimizing model performance. We use GridSearchCV to perform an exhaustive search over a specified parameter grid for each model. This helps in finding the best combination of hyperparameters that maximize the model's accuracy and other performance metrics. For example, we tune the number of estimators and the depth of trees for the Random Forest model.
+
 ## 🤖 Models Used
 We experimented with several models to find the best predictor:
 - **Support Vector Classifier (SVC)**
 - **Decision Tree Classifier**
 - **Random Forest Classifier**
 - **Gaussian Naive Bayes**
+- **K-Nearest Neighbors (KNN)**: KNN is a simple and effective classification algorithm that assigns a class to a sample based on the majority class of its k-nearest neighbors. In this project, KNN is used to explore its effectiveness in predicting credit risk.
 
 ## 🏆 Results
 The Random Forest Classifier emerged as the top performer with the following metrics:
